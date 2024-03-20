@@ -6,6 +6,7 @@
 
 :root {
     --primary-color: #5d3bee;
+    --text-color: #51586a;
 }
 
 html {
@@ -37,12 +38,29 @@ body {
     opacity: 0.9;
 }
 
+.section-heading {
+    color: #080415;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: -2.24px;
+}
+
+.section-desc {
+    margin-top: 20px;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+/* Header */
 .header {
     position: sticky;
     left: 0;
     top: -12px;
+    z-index: 10;
     background: #fbfaff;
-    padding: 20px 135px;
+    padding: 20px 135px 8px;
 }
 
 .header__inner {
@@ -81,7 +99,7 @@ body {
 
 .header__navbar-item-link {
     padding: 12px 22px;
-    color: #51586a;
+    color: var(--text-color);
     font-size: 1.8rem;
 }
 
@@ -93,7 +111,7 @@ body {
 /* Hero */
 .hero {
     background: #fbfaff;
-    padding-top: 24px;
+    padding-top: 36px;
 }
 
 .hero__inner {
@@ -160,7 +178,7 @@ body {
 .hero__desc {
     width: 370px;
     margin-top: 20px;
-    color: #51586a;
+    color: var(--text-color);
     font-size: 1.8rem;
     line-height: 1.67;
 }
@@ -189,7 +207,7 @@ body {
 }
 
 .hero__socials-title {
-    color: #51586a;
+    color: var(--text-color);
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.875;
@@ -265,4 +283,72 @@ body {
     font-size: 1.7rem;
     color: #080415;
     font-weight: 600;
+}
+
+/* Special */
+.special {
+    margin-top: 133px;
+}
+
+.special__top {
+    text-align: center;
+}
+
+.special__desc {
+    width: 534px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.special__list {
+    margin-top: 60px;
+    align-items: center;
+}
+
+.special-item {
+    padding: 33px 43px;
+    background: #fbfaff;
+}
+
+.special-item__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74px;
+    height: 74px;
+    border: 1px solid #0804150d;
+    border-radius: 50%;
+}
+
+.special__icon-product {
+    position: relative;
+    top: 6px;
+}
+
+.special__icon-ui {
+    position: relative;
+    top: 10px;
+}
+
+.special__icon-interactive {
+    position: relative;
+    top: 10px;
+    left: -4px;
+}
+
+.special-item__name {
+    margin-top: 22px;
+    color: #080415;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+}
+
+.special-item__desc {
+    width: 285px;
+    margin-top: 15px;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    line-height: 1.67;
 }
