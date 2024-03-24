@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Arif Personal Portfolio</title>
+        <title>Minh Duc Personal Portfolio</title>
 
         <!-- Embed font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -95,9 +95,10 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/grid.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <!-- Header -->
+        <!-- PC Header -->
         <header class="header">
             <div class="header__inner">
                 <div class="header__email">
@@ -113,6 +114,10 @@
                     <a href="mailto:hi@minhduc.interactive">
                         <p class="header__email-text">hi@minhduc.interactive</p>
                     </a>
+                    <!-- Toggle menu -->
+                    <label for="menu-checkbox" class="toggle-menu hide-on-pc">
+                        <img src="./assets/icon/menu.svg" alt="" />
+                    </label>
                 </div>
 
                 <!-- Logo -->
@@ -155,12 +160,75 @@
             </div>
         </header>
 
+        <!-- Mobile & Tablet Header -->
+        <header class="mobile-header hide-on-pc">
+            <input
+                type="checkbox"
+                name="menu-checkbox"
+                class="menu-checkbox"
+                id="menu-checkbox"
+                hidden
+            />
+
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- Menu Drawer -->
+            <div class="menu-drawer">
+                <!-- Logo -->
+                <a href="#">
+                    <img
+                        src="./assets/img/logo.png"
+                        alt=""
+                        class="header__logo"
+                    />
+                </a>
+
+                <!-- Navbar -->
+                <ul class="mobile-nav">
+                    <li class="mobile-nav__item">
+                        <a href="#projects" class="mobile-nav__item-link">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="#journey" class="mobile-nav__item-link">
+                            Journey
+                        </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="#service" class="mobile-nav__item-link">
+                            Service
+                        </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="#contact" class="mobile-nav__item-link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Close icon -->
+                <label for="menu-checkbox" class="close-menu__btn">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"
+                        />
+                    </svg>
+                </label>
+            </div>
+        </header>
+
         <main>
             <!-- Hero -->
             <section class="hero">
                 <div class="container">
                     <div class="row hero__inner">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 col-12">
                             <div class="hero__media">
                                 <figure class="hero__img-wrap">
                                     <img
@@ -189,7 +257,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5 offset-lg-2">
+                        <div class="col-lg-5 offset-lg-2 col-12">
                             <section class="hero__info">
                                 <h1 class="hero__heading">
                                     An Interactive Designer
@@ -1086,6 +1154,7 @@
             </section>
         </main>
 
+        <!-- Footer -->
         <footer class="footer">
             <div class="footer__inner">
                 <div class="footer__top">
