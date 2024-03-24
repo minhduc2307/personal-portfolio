@@ -21,6 +21,10 @@ body {
 }
 
 /* Common */
+.container {
+    padding: 0;
+}
+
 .btn {
     --height: 62px;
     display: inline-block;
@@ -141,32 +145,10 @@ body {
     width: 100%;
 }
 
-.hero__media-decore > img {
-    opacity: 0.1;
-}
-
-.hero__media-decore img:nth-child(1) {
+.hero__media-decore img {
     position: absolute;
-    top: 0;
-    left: 168px;
-}
-
-.hero__media-decore img:nth-child(2) {
-    position: absolute;
-    top: 148px;
-    left: -64px;
-}
-
-.hero__media-decore img:nth-child(3) {
-    position: absolute;
-    top: 2px;
-    right: 25px;
-}
-
-.hero__media-decore img:nth-child(4) {
-    position: absolute;
-    top: 200px;
-    right: 10px;
+    left: -210px;
+    bottom: -8px;
 }
 
 .hero__info {
