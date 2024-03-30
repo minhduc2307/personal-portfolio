@@ -804,6 +804,10 @@ input[type="checkbox"]:checked ~ .faq-btn__control .faq__btn-default {
     text-align: center;
 }
 
+.cta__heading {
+    margin-top: 10px;
+}
+
 .cta__btn {
     margin-top: 30px;
     cursor: pointer;

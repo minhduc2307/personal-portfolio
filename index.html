@@ -482,7 +482,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="dots">
+                    <div class="dots hide-on-pc">
                         <div class="dot active"></div>
                         <div class="dot"></div>
                         <div class="dot"></div>
@@ -1076,7 +1076,9 @@
                     <div class="row">
                         <div class="col">
                             <div class="atmosphere__top">
-                                <h2 class="section-heading">My atmosphere</h2>
+                                <h2 class="section-heading atmosphere__heading">
+                                    My atmosphere
+                                </h2>
                                 <p class="section-desc atmosphere__desc">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. In urna, non nisl tincidunt
@@ -1093,34 +1095,48 @@
                     </div>
                     <div class="atmosphere__list">
                         <div class="row">
-                            <div class="col-lg-4 col-sm-12">
-                                <figure class="atmosphere__img-wrap">
-                                    <img
-                                        src="./assets/img/atmosphere-01.jpg"
-                                        alt=""
-                                        class="atmosphere__thumb"
-                                    />
-                                </figure>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="atmosphere-item">
+                                    <figure class="atmosphere__img-wrap">
+                                        <img
+                                            src="./assets/img/atmosphere-01.jpg"
+                                            alt=""
+                                            class="atmosphere__thumb"
+                                        />
+                                    </figure>
+                                </div>
                             </div>
-                            <div class="col-lg-4 col-sm-12">
-                                <figure class="atmosphere__img-wrap">
-                                    <img
-                                        src="./assets/img/atmosphere-02.jpg"
-                                        alt=""
-                                        class="atmosphere__thumb"
-                                    />
-                                </figure>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="atmosphere-item hide-on-mobile">
+                                    <figure class="atmosphere__img-wrap">
+                                        <img
+                                            src="./assets/img/atmosphere-02.jpg"
+                                            alt=""
+                                            class="atmosphere__thumb"
+                                        />
+                                    </figure>
+                                </div>
                             </div>
-                            <div class="col-lg-4 col-sm-12">
-                                <figure class="atmosphere__img-wrap">
-                                    <img
-                                        src="./assets/img/atmosphere-03.jpg"
-                                        alt=""
-                                        class="atmosphere__thumb"
-                                    />
-                                </figure>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div
+                                    class="atmosphere-item hide-on-mobile-tablet"
+                                >
+                                    <figure class="atmosphere__img-wrap">
+                                        <img
+                                            src="./assets/img/atmosphere-03.jpg"
+                                            alt=""
+                                            class="atmosphere__thumb"
+                                        />
+                                    </figure>
+                                </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="dots hide-on-pc">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
                     </div>
                 </div>
             </section>
@@ -1129,14 +1145,14 @@
             <section class="cta">
                 <div class="container cta__inner">
                     <div class="row">
-                        <div class="col-md-6 offset-md-3">
+                        <div class="col-md-6 offset-md-3 col-12">
                             <div class="cta__info">
                                 <img
                                     src="./assets/icon/congratulation.svg"
                                     alt=""
                                     class="cta__icon"
                                 />
-                                <h2 class="section-heading">
+                                <h2 class="section-heading cta__heading">
                                     Got a project? Let’s talk
                                 </h2>
                                 <p class="section-desc cta__desc">
@@ -1191,7 +1207,7 @@
                     </div>
 
                     <!-- Logo -->
-                    <a href="#">
+                    <a href="#" class="footer__logo">
                         <img
                             src="./assets/img/logo.png"
                             alt=""
@@ -1227,7 +1243,7 @@
                 </div>
                 <div class="footer__bottom">
                     <p class="footer__copyright">
-                        ©interactiveMinhDuc 2024. All rights reserved.
+                        ©interactiveDuc 2024. All rights reserved.
                     </p>
                     <div class="footer__cta">
                         <a href="#!" class="footer__cta-link footer__privacy"
