@@ -447,6 +447,7 @@ body {
 }
 
 .about__sub-heading {
+    position: relative;
     display: flex;
     align-items: center;
     column-gap: 9px;
@@ -458,6 +459,9 @@ body {
 }
 
 .about__sub-heading::after {
+    position: absolute;
+    top: 2px;
+    right: -38px;
     content: url("../../assets/img/hello.png");
     display: inline-block;
     width: 30px;
