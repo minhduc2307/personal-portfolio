@@ -82,6 +82,20 @@
         color: #333;
     }
 
+    .header .header__logo {
+        width: 46px;
+        height: 46px;
+    }
+
+    .header__icon-wrap {
+        width: 32px;
+        height: 32px;
+    }
+
+    .header__icon {
+        width: 16px;
+        height: 11px;
+    }
     /* Hero */
     .hero__inner {
         flex-direction: column-reverse;
@@ -555,6 +569,10 @@
         font-size: 2.8rem;
         line-height: 1.21;
         letter-spacing: -0.112rem;
+    }
+
+    .client-item__name {
+        font-size: 1.5rem;
     }
 
     .special__heading {
