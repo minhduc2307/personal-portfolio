@@ -101,6 +101,12 @@
         flex-direction: column-reverse;
     }
 
+    .hero__desc {
+        font-size: 1.6rem;
+        line-height: 1.62;
+        width: 91%;
+    }
+
     .hero__info-decore img {
         display: none;
     }
@@ -499,12 +505,8 @@
         align-items: center;
     }
 
-    .hero__heading {
-        text-align: center;
-    }
-
+    .hero__heading,
     .hero__desc {
-        width: 370px;
         text-align: center;
     }
 }
@@ -530,11 +532,6 @@
         font-size: 4.2rem;
         line-height: 1.19;
         letter-spacing: -0.168px;
-    }
-
-    .hero__desc {
-        font-size: 1.6rem;
-        line-height: 1.62;
     }
 
     .hero__info {
@@ -582,7 +579,7 @@
     }
 
     .special__desc {
-        width: 350px;
+        width: 100%;
         font-size: 1.6rem;
         line-height: 1.63;
     }
