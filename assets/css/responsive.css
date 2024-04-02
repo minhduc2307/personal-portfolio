@@ -143,6 +143,8 @@
 
     .special__list {
         margin-top: 50px;
+        flex-wrap: nowrap;
+        overflow: hidden;
     }
 
     .dots {
@@ -402,6 +404,8 @@
 
     .atmosphere__list {
         margin-top: 60px;
+        flex-wrap: nowrap;
+        overflow: hidden;
     }
 
     .atmosphere__img-wrap {

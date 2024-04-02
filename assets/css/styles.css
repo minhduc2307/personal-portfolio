@@ -708,6 +708,7 @@ body {
 
 .faq-btn__control {
     user-select: none;
+    cursor: pointer;
 }
 
 .faq__btn-checked {
