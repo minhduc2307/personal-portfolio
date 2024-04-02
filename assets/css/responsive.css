@@ -58,9 +58,9 @@
         transform: translateX(0);
     }
 
-    .mobile-nav {
-        margin-top: 40px;
-    }
+    /* .mobile-nav {
+        margin-top: 30px;
+    } */
 
     .mobile-nav__item-link {
         font-size: 1.8rem;
@@ -78,7 +78,7 @@
     }
 
     .close-menu__btn svg {
-        width: 40px;
+        width: 34px;
         color: #333;
     }
 
@@ -176,11 +176,11 @@
     }
 
     .project {
-        padding: 69px 0 60px;
+        padding: 96px 0 60px;
     }
 
     .project__heading {
-        width: 300px;
+        width: 86%;
         margin: 0 auto;
         font-size: 3.6rem;
         line-height: 1.16;
@@ -406,6 +406,7 @@
 
     .atmosphere__img-wrap {
         width: 100%;
+        height: auto;
     }
 
     .atmosphere .dots {
@@ -465,8 +466,12 @@
         margin-top: 10px;
     }
 
+    .footer .header__navbar-list {
+        column-gap: 38px;
+    }
+
     .footer .header__navbar-item-link {
-        padding: 10px 19px;
+        padding: 10px 0;
         font-size: 1.6rem;
         line-height: 1.25;
     }
