@@ -70,3 +70,61 @@ if (window.matchMedia("(min-width: 992px)").matches) {
         });
     });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 991.98) {
+        const specialConfig = {
+            itemList: document.querySelector(".special__list"),
+            items: document.querySelectorAll(".special__list .col-12"),
+            dots: document.querySelectorAll(".special-dots .dot"),
+            itemWidth: 0,
+            currentIndex: 0,
+            totalItems: 0,
+            sliderInterval: null,
+        };
+
+        const atmosphereConfig = {
+            itemList: document.querySelector(".atmosphere__list"),
+            items: document.querySelectorAll(".atmosphere__list .col-12"),
+            dots: document.querySelectorAll(".atmosphere-dots .dot"),
+            itemWidth: 0,
+            currentIndex: 0,
+            totalItems: 0,
+            sliderInterval: null,
+        };
+
+        function showItem(config) {
+            config.itemList.style.transform = `translateX(-${
+                config.currentIndex * config.itemWidth
+            }px)`;
+            config.dots.forEach((dot) => {
+                dot.classList.remove("active");
+            });
+            config.dots[config.currentIndex].classList.add("active");
+        }
+
+        function nextItem(config) {
+            if (config.currentIndex + 1 <= config.totalItems - 1) {
+                config.currentIndex = config.currentIndex + 1;
+            } else {
+                config.currentIndex = 0;
+            }
+            showItem(config);
+        }
+
+        function startSlider(config) {
+            config.sliderInterval = setInterval(() => {
+                nextItem(config);
+            }, 3000);
+        }
+
+        function setupSlider(config) {
+            config.itemWidth = config.items[0].offsetWidth;
+            config.totalItems = config.items.length;
+            startSlider(config);
+        }
+
+        setupSlider(specialConfig);
+        setupSlider(atmosphereConfig);
+    }
+});
