@@ -141,10 +141,13 @@
         justify-content: flex-start;
     }
 
-    .special__list {
+    .special__info {
         margin-top: 50px;
-        flex-wrap: nowrap;
         overflow: hidden;
+    }
+
+    .special__list {
+        flex-wrap: nowrap;
     }
 
     .dots {

@@ -291,9 +291,8 @@ body {
     margin-right: auto;
 }
 
-.special__list {
+.special__info {
     margin-top: 60px;
-    align-items: center;
 }
 
 .special-item {
@@ -564,16 +563,18 @@ body {
 }
 
 .people__content {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
+    overflow: hidden;
 }
 
 .people__list {
     display: flex;
-    overflow: hidden;
     width: 100%;
+    transition: transform 1s linear;
 }
 
 .people-item {
@@ -620,9 +621,31 @@ body {
     line-height: 1.82;
 }
 
-.slide-from-right {
-    transition: transform 0.3s ease;
-    transform: translateX(100%);
+.people__control-buttons {
+    position: absolute;
+    display: flex;
+    width: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: space-between;
+}
+
+.people__control-buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    border: none;
+    font-size: 2rem;
+    border-radius: 50%;
+    background: #333;
+    color: #fefefe;
+}
+
+.people__control-buttons button svg {
+    width: 30px;
+    height: 30px;
 }
 
 .dots {
@@ -637,6 +660,7 @@ body {
     height: 16px;
     background: #08041533;
     border-radius: 50%;
+    transition: 0.25s;
 }
 
 .dot.active {

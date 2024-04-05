@@ -1,21 +1,47 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-// const dots = $$(".dots .dot");
-// const peopleItems = $$(".people-item");
+const peopleList = $(".people__list");
+const peopleDots = $$(".people-dots .dot");
+const peopleItems = $$(".people-item");
+const nextBtn = $(".people__next");
+const prevBtn = $(".people__prev");
 
-// const dotActive = $(".dot.active");
+let active = 0;
+let peopleItemLengths = peopleItems.length - 1;
+let autoSlide = setInterval(() => {
+    nextBtn.click();
+}, 3000);
 
-// dots.forEach((dot, index) => {
-//     const people = peopleItems[index];
+nextBtn.onclick = () => {
+    active = active + 1 <= peopleItemLengths ? active + 1 : 0;
+    reloadPeopleSlider();
+};
 
-//     dot.addEventListener("click", () => {
-//         $(".people-item.active").classList.remove("active");
-//         $(".dot.active").classList.remove("active");
-//         dot.classList.add("active");
-//         people.classList.add("active");
-//     });
-// });
+prevBtn.onclick = () => {
+    active = active - 1 >= 0 ? active - 1 : peopleItemLengths;
+    reloadPeopleSlider();
+};
+
+function reloadPeopleSlider() {
+    const offset = -1 * peopleItems[active].offsetLeft;
+    peopleList.style.transform = `translateX(${offset}px)`;
+
+    let lastActiveDot = $(".people-dots .dot.active");
+    lastActiveDot.classList.remove("active");
+    peopleDots[active].classList.add("active");
+    clearInterval(autoSlide);
+    autoSlide = setInterval(() => {
+        nextBtn.click();
+    }, 3000);
+}
+
+peopleDots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+        active = index;
+        reloadPeopleSlider();
+    });
+});
 
 if (window.matchMedia("(min-width: 992px)").matches) {
     document.addEventListener("DOMContentLoaded", function () {
