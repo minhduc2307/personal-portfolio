@@ -7,6 +7,7 @@ const peopleItems = $$(".people-item");
 const nextBtn = $(".people__next");
 const prevBtn = $(".people__prev");
 
+const peopleItemWidth = peopleItems[0].offsetWidth;
 let active = 0;
 let peopleItemLengths = peopleItems.length - 1;
 let autoSlide = setInterval(() => {
@@ -24,7 +25,9 @@ prevBtn.onclick = () => {
 };
 
 function reloadPeopleSlider() {
-    const offset = -1 * peopleItems[active].offsetLeft;
+    // const offset = -1 * peopleItems[active].offsetLeft;
+    // peopleList.style.transform = `translateX(${offset}px)`;
+    const offset = -1 * peopleItemWidth * active;
     peopleList.style.transform = `translateX(${offset}px)`;
 
     let lastActiveDot = $(".people-dots .dot.active");
