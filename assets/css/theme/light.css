@@ -1,0 +1,41 @@
+html {
+    --text-color: #51586a;
+    --heading-text-color: #080415;
+    --btn-bg: #5d3bee;
+    --icon-color: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%) hue-rotate(30deg) brightness(107%)
+        contrast(88%);
+
+    --header-icon-border-color: #5d3bee33;
+    --header-email-text-color: #080415;
+
+    --body-bg: #fff;
+    --header-bg: #fbfaff;
+    --hero-bg: #fbfaff;
+    --hero-social-border-color: #0804151a;
+
+    /* Special item */
+    --special-item-bg: #fbfaff;
+
+    --project-bg: #5d3bee;
+    --project-item-bg: #fbfaff;
+    --project-cta-btn-bg: #fff;
+
+    --dot-bg: #08041533;
+
+    --about-stats-border-color: #08041533;
+
+    --faq-item-border-color: #08182f;
+    --faq-item-active-border-color: #5d3bee;
+    --faq-item-question-color: #5d3bee;
+    --faq-item-answer: #51586a;
+    --faq-btn-checked-color: brightness(0) saturate(100%) invert(21%) sepia(96%) saturate(4502%) hue-rotate(250deg)
+        brightness(97%) contrast(92%);
+
+    --atmosphere-mail-color: #5d3bee;
+    --cta-inner-bg: #fbfaff;
+
+    --footer-text-color: #52577199;
+
+    --menu-drawer-bg: #fafafa;
+    --mobile-nav-item-link-color: #575d5e;
+}

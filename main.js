@@ -97,9 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         function showItem(config) {
-            config.itemList.style.transform = `translateX(-${
-                config.currentIndex * config.itemWidth
-            }px)`;
+            config.itemList.style.transform = `translateX(-${config.currentIndex * config.itemWidth}px)`;
             config.dots.forEach((dot) => {
                 dot.classList.remove("active");
             });
@@ -130,4 +128,23 @@ document.addEventListener("DOMContentLoaded", function () {
         setupSlider(specialConfig);
         setupSlider(atmosphereConfig);
     }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    // const switchBtn = document.getElementById("switch-mode-btn");
+    const switchBtns = document.querySelectorAll("#switch-mode-btn");
+    switchBtns.forEach((switchBtn) => {
+        let darkMode = false;
+
+        switchBtn.addEventListener("click", function () {
+            darkMode = !darkMode;
+            if (darkMode) {
+                document.querySelector("html").classList.add("dark");
+                switchBtn.textContent = "Light mode";
+            } else {
+                document.querySelector("html").classList.remove("dark");
+                switchBtn.textContent = "Dark mode";
+            }
+        });
+    });
 });

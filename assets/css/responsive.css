@@ -46,7 +46,8 @@
         padding: 40px;
         transform: translateX(-100%);
         transition: transform 0.5s ease;
-        background: #fafafa;
+        background: var(--menu-drawer-bg);
+        box-shadow: 0px 40px 90px 20px var(--menu-drawer-shadow);
     }
 
     .menu-checkbox:checked ~ .menu-overlay {
@@ -62,12 +63,13 @@
         margin-top: 30px;
     } */
 
-    .mobile-nav__item-link {
+    .mobile-nav__item-link,
+    .switch-theme span {
         font-size: 1.8rem;
         font-weight: 600;
         display: inline-block;
         padding: 18px 12px;
-        color: #575d5e;
+        color: var(--mobile-nav-item-link-color);
     }
 
     .close-menu__btn {
@@ -79,7 +81,7 @@
 
     .close-menu__btn svg {
         width: 34px;
-        color: #333;
+        filter: var(--icon-color);
     }
 
     .header .header__logo {

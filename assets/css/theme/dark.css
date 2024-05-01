@@ -1,0 +1,46 @@
+html.dark {
+    --text-color: #fff;
+    --heading-text-color: #fff;
+    --btn-bg: #ffb700;
+
+    --img-decore-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7482%) hue-rotate(72deg)
+        brightness(99%) contrast(99%);
+    --icon-color: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(223deg) brightness(110%)
+        contrast(101%);
+    --body-bg: #292e39;
+    --header-bg: #171c28;
+
+    --header-icon-border-color: #ffffff33;
+    --header-email-text-color: #fff;
+
+    --hero-bg: #292e39;
+    --hero-social-border-color: #d2d1d6;
+
+    /* Special item */
+    --special-item-bg: #171c28;
+    --special-item-name-color: #fff;
+
+    --project-bg: #292e39;
+    --project-item-bg: #171c28;
+    --project-item-title-color: #fff;
+    --project-cta-btn-bg: #ffb700;
+
+    --dot-bg: #9e9da8;
+
+    --about-stats-border-color: #ededf6;
+
+    --faq-item-border-color: #b9babe;
+    --faq-item-active-border-color: #0071dc;
+    --faq-item-question-color: #0071dc;
+    --faq-item-answer: #9e9da8;
+    --faq-btn-checked-color: brightness(0) saturate(100%) invert(38%) sepia(78%) saturate(5170%) hue-rotate(195deg)
+        brightness(92%) contrast(102%);
+
+    --atmosphere-mail-color: #0071dc;
+    --cta-inner-bg: #171c28;
+
+    --footer-text-color: #b9babe;
+
+    --menu-drawer-bg: #292e39;
+    --mobile-nav-item-link-color: #fff;
+}
